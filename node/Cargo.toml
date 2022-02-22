@@ -1,0 +1,245 @@
+[package]
+authors = ['5ire Developer']
+description = 'Configure 5ire node'
+edition = '2018'
+license = ''
+name = 'node-5ire'
+version = '1.0.0'
+build = 'build.rs'
+
+[package.metadata.docs.rs]
+targets = ['x86_64-unknown-linux-gnu']
+
+[[bin]]
+name = 'node-5ire'
+
+[lib]
+crate-type = ["cdylib", "rlib"]
+
+[build-dependencies.substrate-build-script-utils]
+git = 'https://github.com/paritytech/substrate.git'
+tag = 'monthly-2021-11'
+
+[dependencies.node-5ire-runtime]
+path = '../runtime/5ire'
+version = '1.0.0'
+
+[dependencies]
+jsonrpc-core = '18.0.0'
+structopt = '0.3.8'
+serde = { version = "1.0.132", features = ["derive"], default-features = false }
+futures = { version = "0.3.19", features = ["compat"] }
+hex-literal = "0.3.1"
+jsonrpc-pubsub = "18.0.0"
+log = "0.4.8"
+rand = "0.8.4"
+tracing = "0.1.19"
+parking_lot = "0.11.2"
+hex = "0.4.3"
+serde_json = {version = "1.0", default-features = false}
+
+[dependencies.frame-benchmarking]
+git = 'https://github.com/paritytech/substrate.git'
+
+tag = 'monthly-2021-11'
+
+[dependencies.node-primitives]
+git = 'https://github.com/paritytech/substrate.git'
+tag = 'monthly-2021-11'
+
+
+[dependencies.frame-benchmarking-cli]
+git = 'https://github.com/paritytech/substrate.git'
+tag = 'monthly-2021-11'
+
+
+
+[dependencies.pallet-im-online]
+git = 'https://github.com/paritytech/substrate.git'
+tag = 'monthly-2021-11'
+
+[dependencies.pallet-authority-discovery]
+git = 'https://github.com/paritytech/substrate.git'
+tag = 'monthly-2021-11'
+
+
+
+[dependencies.sp-authority-discovery]
+git = 'https://github.com/paritytech/substrate.git'
+tag = 'monthly-2021-11'
+
+[dependencies.pallet-transaction-payment-rpc]
+git = 'https://github.com/paritytech/substrate.git'
+tag = 'monthly-2021-11'
+
+[dependencies.sc-basic-authorship]
+git = 'https://github.com/paritytech/substrate.git'
+tag = 'monthly-2021-11'
+
+
+[dependencies.sc-network]
+git = 'https://github.com/paritytech/substrate.git'
+tag = 'monthly-2021-11'
+
+
+[dependencies.sc-authority-discovery]
+git = 'https://github.com/paritytech/substrate.git'
+tag = 'monthly-2021-11'
+
+[dependencies.sc-cli]
+features = ['wasmtime']
+git = 'https://github.com/paritytech/substrate.git'
+tag = 'monthly-2021-11'
+
+[dependencies.sc-client-api]
+git = 'https://github.com/paritytech/substrate.git'
+tag = 'monthly-2021-11'
+
+[dependencies.sc-consensus]
+git = 'https://github.com/paritytech/substrate.git'
+tag = 'monthly-2021-11'
+
+[dependencies.sc-consensus-aura]
+git = 'https://github.com/paritytech/substrate.git'
+tag = 'monthly-2021-11'
+
+[dependencies.sc-executor]
+features = ['wasmtime']
+git = 'https://github.com/paritytech/substrate.git'
+tag = 'monthly-2021-11'
+
+[dependencies.sc-finality-grandpa]
+git = 'https://github.com/paritytech/substrate.git'
+tag = 'monthly-2021-11'
+
+[dependencies.sc-keystore]
+git = 'https://github.com/paritytech/substrate.git'
+tag = 'monthly-2021-11'
+
+[dependencies.sc-chain-spec]
+git = 'https://github.com/paritytech/substrate.git'
+tag = 'monthly-2021-11'
+
+[dependencies.sc-rpc]
+git = 'https://github.com/paritytech/substrate.git'
+tag = 'monthly-2021-11'
+
+[dependencies.sc-rpc-api]
+git = 'https://github.com/paritytech/substrate.git'
+tag = 'monthly-2021-11'
+
+[dependencies.sc-client-db]
+git = 'https://github.com/paritytech/substrate.git'
+tag = 'monthly-2021-11'
+default-features = false
+
+
+[dependencies.sc-service]
+features = ['wasmtime']
+git = 'https://github.com/paritytech/substrate.git'
+tag = 'monthly-2021-11'
+
+[dependencies.sc-telemetry]
+git = 'https://github.com/paritytech/substrate.git'
+tag = 'monthly-2021-11'
+
+[dependencies.sc-transaction-pool]
+git = 'https://github.com/paritytech/substrate.git'
+tag = 'monthly-2021-11'
+
+[dependencies.sc-transaction-pool-api]
+git = 'https://github.com/paritytech/substrate.git'
+tag = 'monthly-2021-11'
+
+[dependencies.sp-api]
+git = 'https://github.com/paritytech/substrate.git'
+tag = 'monthly-2021-11'
+
+[dependencies.sp-block-builder]
+git = 'https://github.com/paritytech/substrate.git'
+tag = 'monthly-2021-11'
+
+[dependencies.sp-blockchain]
+git = 'https://github.com/paritytech/substrate.git'
+tag = 'monthly-2021-11'
+
+[dependencies.sp-consensus]
+git = 'https://github.com/paritytech/substrate.git'
+tag = 'monthly-2021-11'
+
+[dependencies.sp-consensus-aura]
+git = 'https://github.com/paritytech/substrate.git'
+tag = 'monthly-2021-11'
+
+[dependencies.sp-core]
+git = 'https://github.com/paritytech/substrate.git'
+tag = 'monthly-2021-11'
+
+[dependencies.sp-finality-grandpa]
+git = 'https://github.com/paritytech/substrate.git'
+tag = 'monthly-2021-11'
+
+[dependencies.sp-inherents]
+git = 'https://github.com/paritytech/substrate.git'
+tag = 'monthly-2021-11'
+
+[dependencies.sp-runtime]
+git = 'https://github.com/paritytech/substrate.git'
+tag = 'monthly-2021-11'
+
+[dependencies.sp-timestamp]
+git = 'https://github.com/paritytech/substrate.git'
+tag = 'monthly-2021-11'
+
+[dependencies.frame-rpc-system]
+package = "substrate-frame-rpc-system"
+git = 'https://github.com/paritytech/substrate.git'
+tag = 'monthly-2021-11'
+
+
+
+#Frontier
+
+[dependencies.fc-consensus]
+git = 'https://github.com/5ire-org/frontier.git'
+branch= "5ire-11"
+
+[dependencies.fp-consensus]
+git = 'https://github.com/5ire-org/frontier.git'
+branch= "5ire-11"
+
+
+[dependencies.fc-rpc-core]
+git = 'https://github.com/5ire-org/frontier.git'
+branch= "5ire-11"
+
+
+[dependencies.fc-rpc]
+git = 'https://github.com/5ire-org/frontier.git'
+branch= "5ire-11"
+
+[dependencies.fp-rpc]
+git = 'https://github.com/5ire-org/frontier.git'
+branch= "5ire-11"
+
+[dependencies.fc-db]
+git = 'https://github.com/5ire-org/frontier.git'
+branch= "5ire-11"
+
+
+[dependencies.fc-mapping-sync]
+git = 'https://github.com/5ire-org/frontier.git'
+branch= "5ire-11"
+
+[dependencies.pallet-evm]
+git = 'https://github.com/5ire-org/frontier.git'
+branch= "5ire-11"
+
+[dependencies.pallet-ethereum]
+git = 'https://github.com/5ire-org/frontier.git'
+branch= "5ire-11"
+
+
+[features]
+default = []
+runtime-benchmarks = ['node-5ire-runtime/runtime-benchmarks']

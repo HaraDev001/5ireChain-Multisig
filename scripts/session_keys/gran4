@@ -1,0 +1,10 @@
+{
+    "jsonrpc":"2.0",
+    "id":1,
+    "method":"author_insertKey",
+    "params": [
+        "gran",
+        "shrug device oil grape dragon truth tonight lawn own nose eagle embody",
+	    "0x2d9b93502b85c543b7a8f2b3dd5b6b027841a8c47dc9ff133a99a864bba57878"
+    ]
+}

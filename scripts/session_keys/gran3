@@ -1,0 +1,10 @@
+{
+    "jsonrpc":"2.0",
+    "id":1,
+    "method":"author_insertKey",
+    "params": [
+        "gran",
+        "garment scare render rack armed inner cabbage embody finger immune destroy play",
+	"0x2b15acbb4f040d38ceeda2901876e9249843b55d3b26c01a321a63ec6d05d1f1"
+    ]
+}

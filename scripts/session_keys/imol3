@@ -1,0 +1,11 @@
+
+{
+    "jsonrpc":"2.0",
+    "id":1,
+    "method":"author_insertKey",
+    "params": [
+        "imol",
+        "garment scare render rack armed inner cabbage embody finger immune destroy play",
+        "0x60faab9e31f01708694a2c74f883d010c2d9fc92f7485b88978f66c7b3c9db22"
+    ]
+}

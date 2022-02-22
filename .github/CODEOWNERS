@@ -1,0 +1,7 @@
+docker-compose.yml @arush-sal
+.github/**         @arush-sal
+manifests/**       @arush-sal
+node/**            @dung4ire
+pallets/**         @LaurensKubat
+runtime/**         @LaurensKubat
+scripts/**         @arush-sal

@@ -1,0 +1,10 @@
+{
+    "jsonrpc":"2.0",
+    "id":1,
+    "method":"author_insertKey",
+    "params": [
+        "gran",
+        "twelve island tongue future tower found crater shallow real culture whisper produce",
+	"0x5e04b3b9a7eeaba22193cddc822aea3d08046b0f9fdcaeeb09b0fb5206529edc"
+    ]
+}

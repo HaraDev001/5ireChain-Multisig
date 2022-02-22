@@ -1,0 +1,18 @@
+#################################
+# GitHub Dependabot Config info #
+#################################
+version: 2
+updates:
+  # Maintain dependencies for docker
+  - package-ecosystem: "docker"
+    directory: "/"
+    schedule:
+      interval: "daily"
+    open-pull-requests-limit: 10
+
+  # Maintain dependencies for Rust cargo
+  - package-ecosystem: "cargo"
+    directory: "/"
+    schedule:
+      interval: "daily"
+    open-pull-requests-limit: 10

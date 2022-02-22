@@ -1,0 +1,10 @@
+{
+    "jsonrpc":"2.0",
+    "id":1,
+    "method":"author_insertKey",
+    "params": [
+        "gran",
+        "fly check spoil rubber bike pledge odor squeeze visual barrel gym library",
+	    "0x351cd98cfac65e56a4fb98b1b90b7b182fdb89f20f0a673c5ce47259843fe9da"
+    ]
+}

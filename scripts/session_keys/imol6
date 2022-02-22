@@ -1,0 +1,10 @@
+{
+    "jsonrpc":"2.0",
+    "id":1,
+    "method":"author_insertKey",
+    "params": [
+        "imol",
+        "pencil express jar salt view pond fame faint plug tide tooth deer",
+        "0xe8fe1f2ec16b6d803e6486b1c29b72d1de3679dae19732d0a6d9f1ce919c6e54"
+    ]
+}

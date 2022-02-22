@@ -1,0 +1,11 @@
+
+{
+    "jsonrpc":"2.0",
+    "id":1,
+    "method":"author_insertKey",
+    "params": [
+        "imol",
+        "champion unit poem display venue flee can poet famous walnut glimpse style",
+        "0x7e233c55ac30f6b0c205f824526f7a19c2a7ea7a24ba674ec637464a6a402073"
+    ]
+}

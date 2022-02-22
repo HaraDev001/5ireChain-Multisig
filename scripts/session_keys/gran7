@@ -1,0 +1,10 @@
+{
+    "jsonrpc":"2.0",
+    "id":1,
+    "method":"author_insertKey",
+    "params": [
+        "gran",
+        "champion unit poem display venue flee can poet famous walnut glimpse style",
+	    "0x7717785eef4b8fb43beb6ee386e869a79a7fbd819c48c071638d70b35718f8da"
+    ]
+}

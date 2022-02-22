@@ -1,0 +1,10 @@
+{
+    "jsonrpc":"2.0",
+    "id":1,
+    "method":"author_insertKey",
+    "params": [
+        "gran",
+        "heavy earth express slab lecture clarify visual theme update beauty peanut heavy",
+	    "0x968f5a1093f17a36480d294f83b532bd38ffc611a3f793d9071a99ffd013991f"
+    ]
+}

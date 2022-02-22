@@ -1,0 +1,10 @@
+{
+    "jsonrpc":"2.0",
+    "id":1,
+    "method":"author_insertKey",
+    "params": [
+        "imol",
+        "heavy earth express slab lecture clarify visual theme update beauty peanut heavy",
+        "0xae4d7bafd63b6bfb7da29fb85776b2d2fdcb4d8834af3def01c168641549af5b"
+    ]
+}

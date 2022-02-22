@@ -1,0 +1,10 @@
+[workspace]
+members = [
+    'node',
+    'pallets/*',
+    'runtime/5ire',
+    'runtime/common',
+    'esg_oracle',
+]
+[profile.release]
+panic = 'unwind'

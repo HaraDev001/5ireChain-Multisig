@@ -1,0 +1,26 @@
+---
+name: Security-Audit
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "30 05 * * 0"
+env:
+  CARGO_NET_GIT_FETCH_WITH_CLI: true
+jobs:
+  security_audit:
+    name: SecurityAudit
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+      - uses: webfactory/ssh-agent@v0.5.4
+        with:
+          ssh-private-key: "${{ secrets.DEPLOY_KEY }}"
+      - run: |
+          if ! git config --get --global url.git@github.com:.insteadof https://github.com 2>&1 > /dev/null; then
+            git config --global url.git@github.com:.insteadOf https://github.com/
+          fi
+      - uses: actions-rs/audit-check@v1
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}

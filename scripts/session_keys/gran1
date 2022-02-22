@@ -1,0 +1,10 @@
+{
+    "jsonrpc":"2.0",
+    "id":1,
+    "method":"author_insertKey",
+    "params": [
+        "gran",
+        "bargain round pink rent year bulk hood describe rival cross choice margin", 
+       "0x5e1061dbb97bf47b4012b52dffdec98b67abb7f2dc664fd5c0353542261da130"
+    ]
+}

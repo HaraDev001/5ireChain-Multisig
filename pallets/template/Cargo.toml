@@ -1,0 +1,73 @@
+[package]
+authors = ['Substrate DevHub <https://github.com/substrate-developer-hub>']
+description = 'Substrate FRAME pallet template for defining custom runtime logic.'
+edition = '2018'
+homepage = 'https://substrate.dev'
+license = 'Unlicense'
+name = 'pallet-template'
+publish = false
+repository = 'https://github.com/substrate-developer-hub/substrate-node-template/'
+version = '3.0.0-monthly-2021-08'
+readme = 'README.md'
+
+[package.metadata.docs.rs]
+targets = ['x86_64-unknown-linux-gnu']
+
+[dependencies.serde]
+default-features = false
+version = '1.0.132'
+
+[dependencies.scale-info]
+version = '1.0'
+default-features = false
+features = ["derive"]
+
+[dev-dependencies.sp-core]
+default-features = false
+git = 'https://github.com/paritytech/substrate.git'
+tag = 'monthly-2021-11' 
+
+[dev-dependencies.sp-io]
+default-features = false
+git = 'https://github.com/paritytech/substrate.git'
+tag = 'monthly-2021-11' 
+
+[dev-dependencies.sp-runtime]
+default-features = false
+git = 'https://github.com/paritytech/substrate.git'
+tag = 'monthly-2021-11' 
+
+[dependencies.codec]
+default-features = false
+features = ['derive']
+package = 'parity-scale-codec'
+version = '2.3.1'
+
+[dependencies.frame-benchmarking]
+default-features = false
+git = 'https://github.com/paritytech/substrate.git'
+optional = true
+tag = 'monthly-2021-11' 
+
+[dependencies.frame-support]
+default-features = false
+git = 'https://github.com/paritytech/substrate.git'
+tag = 'monthly-2021-11' 
+
+[dependencies.frame-system]
+default-features = false
+git = 'https://github.com/paritytech/substrate.git'
+tag = 'monthly-2021-11' 
+
+[features]
+default = ['std']
+runtime-benchmarks = ['frame-benchmarking']
+std = [
+    'codec/std',
+    'serde/std',
+    'frame-support/std',
+    'frame-system/std',
+    'frame-benchmarking/std',
+    "scale-info/std",
+]
+try-runtime = ['frame-support/try-runtime']
