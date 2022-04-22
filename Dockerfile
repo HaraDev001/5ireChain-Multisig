@@ -16,7 +16,7 @@ ENV CARGO_NET_GIT_FETCH_WITH_CLI=true
 RUN --mount=type=ssh cargo --config net.git-fetch-with-cli=true -Z unstable-options build --release \
     && cp /5ire/target/release/node-5ire /5ire/node-5ire
 
-FROM ubuntu:20.04 as runtime
+FROM ubuntu:22.04 as runtime
 
 EXPOSE 9944 9615 9933 30333
 WORKDIR /5ire
